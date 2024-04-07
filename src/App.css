@@ -6,23 +6,60 @@
     /* min-height: 100vh; */
     max-width: 1200px;
     margin: 0px auto;
-    padding: 0 16px;
 }
-
+/* ==========NAV=========== */
 nav {
     background-color: #3DC4FC;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: whitesmoke;
     height: 6rem;
-    
+    padding: 0px 1rem;
     
 }
 .home-icon {
     color: whitesmoke;
     font-size: 4rem;
 }
+
+.hamburger {
+  cursor: pointer;
+  width: 48px;
+  /* hamburger lines */
+}
+
+.hamburger svg {
+  width: 3rem;
+  height: 3rem;
+  margin: auto;
+  transition: all 0.3s ease;
+}
+
+.menu {
+  display: none; /* Start with not displayed */
+}
+
+.menu.open {
+  display: block; /* Display menu when open */
+}
+
+/* menu items */
+.menu a {
+  display: flex;
+  flex-direction: column;
+  /* padding: 10px; */
+  text-decoration: none;
+  color: black;
+}
+
+/* Responsive*/
+@media (max-width: 768px) {
+  .menu {
+    
+  }
+}
+
 /* =======HomePage========== */
 .card-container {
     display: flex;
@@ -40,6 +77,12 @@ nav {
     color: #222222;
   }
   /* =======AllBeersPage========== */
+
+.product-list {
+  display: flex;
+    flex-direction: column;
+    max-width: 100%;
+}
 
   .product {
     display: flex;

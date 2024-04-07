@@ -44,7 +44,7 @@ function AllBeersPage() {
     })
 
     return (
-        <div className="center">
+        <div className="product-list center">
             {beerList}
         </div>
     )
